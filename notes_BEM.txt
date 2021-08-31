@@ -1,0 +1,35 @@
+Studying BEM
+
+BEM ->
+    * Block     -> Bloco
+    * Element   -> Elemento
+    * Modifier  -> Modificador
+
+Padrão da nomenclatura utilizado:
+
+    * Nossa primeira classe sempre será o bloco: ".list"
+    * Para criarmos os elementos, utilizamos 2 underlines ( __ ) após o nome do nosso bloco 
+        -> Exemplos: ".list__item", ".list__title"
+    * Para criarmos os modificadores, utilizamos 2 traços ( — ) no nosso bloco ou elemento.     
+        -> Exemplos: ".list__item--highlight", ".list__author--active"
+
+O que é um elemento e o que é um modificador?
+
+    -> Elemento: sempre será uma parte, um complemento da estrutura do bloco. Seguindo o exemplo acima, um item de uma lista, o título de uma publicação.
+        Obs.: Um elemento não pode estar dentro de outro elemento.
+    -> Modificadores: estados que os nossos blocos ou elementos poderão ter: um botão com diferentes aparências, uma situação de destaque. Geralmente, os modificadores fazem com que algumas propriedades dos blocos/elementos sejam complementadas — background-color, font-weight, borders, opacity, ou até mesmo o display e o position.
+
+Blocos:
+    * Um bloco é uma entidade independente, um componente de uma aplicação. 
+    * Um bloco pode ser simples ou composto — contendo outros blocos.
+
+    -> É uma questão de contexto: ".list" é o bloco composto (compound block), que possui outro bloco composto, ".list__item". Já ".list__title" é um bloco, contido dentro de ".list__item".
+
+    Obs.: Não é uma regra, mas é uma boa prática utilizar o padrão "__" (2 underlines) apenas 1x dentro do nome da sua classe (apenas 1 elemento). Se você está chegando em nomenclaturas com mais de um elemento, é bom rever a estrutura utilizada!
+
+Boas práticas com BEM
+
+    Independente do uso da metodologia, uma boa prática que você pode/deve seguir quando escreve CSS é em relação a especificidade — quanto menor ela for, melhor será seu código, pois assim você não terá problemas para sobrescrever propriedades e evitará utilizar "!important".
+
+    Assim como dito ali em cima, outra boa prática é evitar um grande número de classes nos elementos HTML; a exceção para esse caso seria apenas a aplicação de modificadores:
+        -> <button class="button button--blue button--outline">Click Me</button>

@@ -1,0 +1,42 @@
+Flexbox
+    -> Ajuda quando estão sendo construídos layout's mais flexíveis, ou seja, para vários tamanhos de telas. 
+    -> Quando usamos a propriedade "display: flex" ou "display: inline-flex" em um elemento HTML (tag) ele ganha o nome de "flex container" (caixa flexível) e todas as tags ou mesmo textos soltos que estão dentro dele chamamos de "flex items" (itens flexíveis)
+
+Flex container
+    O flex container tem o poder de trabalhar em dois eixos que são eles:
+        -> Main axis (eixo principal) que por padrão fica no eixo X (horizontal);
+        -> Cross axis (eixo contrário) que por padrão fica no eixo Y (vertical).
+    
+    Nós temos propriedades do Flexbox que afetam o comportamento do main axis e outras propriedades que afetam o comportamento do cross axis, além da propriedade "flex-direction: column" que muda o main axis para o eixo Y ao mesmo tempo que muda o cross axis para o eixo X. Isto quer dizer que podemos mudar a direção do main axis e cross axis mas não mudamos os comportamentos deles.
+
+    Por padrão todos os flex items seguem o sentido de leitura do idioma que você definiu para o seu site, se o seu site estiver em português o main axis terá o seu início na extremidade esquerda do flex container, chamamos esse início de "main start", o fim ficará na extremidade direita do flex container que chamamos de "main end".
+
+    Agora no cross axis o início fica na extremidade superior do flex container que chamamos de "cross start" e o fim na extremidade inferior do flex container que chamamos de "cross end".
+
+---------------------------------------------------------------
+                    Propriedades do flex container
+    * Main Axis
+        -> flex-direction
+        -> justify-content
+    * Cross Axis
+        -> flex-wrap
+        -> align-items
+        -> align-content
+    * Main Axis e Cross Axis
+        -> flex-flow
+
+                    Propriedades do flex item
+    * Main Axis
+        -> order
+        -> flex
+        -> flex-basis
+        -> flex-grow
+        -> flex-shrink
+        -> visibility: collapse (apesar de ser uma propriedade antiga, só funciona bem com o flex)
+    * Cross Axis
+        -> align-self
+
+                    Propriedades que mudam seu comportamento dentro do flex container
+        -> margin-top
+        -> margin-bottom
+        -> position: absolute

@@ -1,0 +1,18 @@
+.article{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.article__title{
+    font-weight: bold;
+}
+
+.article__item{
+    background-color: rgb(55, 55, 255);
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
